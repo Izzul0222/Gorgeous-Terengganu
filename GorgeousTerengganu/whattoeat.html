@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeous Terengganu - Explore Destinations</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Adjust the transparency */
+            z-index: -1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: transform 0.3s, color 0.5s;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: #ffcc00; /* Yellow */
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .place-image {
+            flex: 0 0 48%;
+            margin: 1%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+            background-color: #333;
+        }
+
+        .place-image:hover {
+            transform: scale(1.05);
+        }
+
+        .place-image img {
+            width: 100%;
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .place-image p {
+            text-align: justify;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logowebsite.png" alt="Your Logo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="about.html">Ganu Story</a>
+        <a href="history.html">Past Journeys</a>
+        <a href="culture.html">Local Traditions</a>
+        <a href="wheretogo.html">Explore Destinations</a>
+        <a href="whattodo.html">Activities Guide</a>
+        <a href="whattoeat.html">Culinary Delights</a>
+        <a href="happenings.html">Events Calendar</a>
+        <!-- Add links to other pages as needed -->
+    </nav>
+
+    <main>
+        <div class="place-image">
+                <img src="keropoklekor.jpg" alt="Keropok Lekor">
+            <p>Keropok Lekor</p>
+            <p>Keropok lekor is a popular Malaysian snack renowned for its unique taste and texture. Originating from the state of Terengganu, this traditional delicacy is primarily made from a combination of fish, sago flour, and seasonings. The mixture is then shaped into elongated rolls before being deep-fried to achieve a crispy exterior while maintaining a chewy interior. Often served with a side of spicy dipping sauce, keropok lekor is a beloved street food that showcases the rich culinary diversity of Malaysia.</p>
+        </div>
+
+        <div class="place-image">
+                <img src="nasidagang.jpg" alt="Nasi Dagang">
+            <p>Nasi Dagang</p>
+            <p>Nasi dagang is a flavorful Malaysian dish celebrated for its aromatic rice preparation and delectable accompaniments. Originating from the east coast of Peninsular Malaysia, it features a combination of steamed glutinous rice and normal rice cooked in coconut milk, giving it a distinctive fragrance. The dish is commonly served with a side of tuna curry, pickled vegetables, and hard-boiled eggs, creating a harmonious blend of flavors and textures. Nasi dagang's popularity extends beyond breakfast, making it a sought-after meal throughout the day, cherished for its unique taste that captures the essence of Malaysian culinary diversity.</p>
+        </div>
+
+        <div class="place-image">
+                <img src="nasikerabu.jpg" alt="Nasi Kerabu">
+            <p>Nasi Kerabu</p>
+            <p>Nasi Kerabu is a vibrant and flavorful Malaysian dish that hails from the northeastern states, particularly Kelantan and Terengganu. The centerpiece of this dish is the blue-tinted rice, which is dyed using the petals of the butterfly pea flower, lending a visually striking aspect to the meal. The rice is typically accompanied by an array of condiments such as finely shredded herbs, vegetables, salted egg, and a variety of sambals or chili-based sauces. A protein, often grilled fish or fried chicken, is commonly added to complete this aromatic and colorful culinary ensemble, making nasi kerabu a delightful and culturally significant dish in Malaysian cuisine.</p>
+        </div>
+
+        <div class="place-image">
+                <img src="ketupatsotong.jpg" alt="Ketupat Sotong">
+            <p>Ketupat Sotong</p>
+            <p>Ketupat sotong is a delightful Malaysian dish that features stuffed squid with a flavorful mixture of glutinous rice, herbs, and spices. The dish is known for its intricate preparation, where cleaned squid tubes are carefully filled with a stuffing composed of seasoned glutinous rice, minced meat, and aromatic ingredients. The stuffed squid is then secured and cooked to perfection, resulting in a unique combination of tender squid and savory, sticky rice. Ketupat sotong is often served during festive occasions, adding a touch of sophistication to the dining experience with its delightful blend of textures and tastes.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; All rights reserved. | Gorgeous Terengganu 2024. | Group 6 - Mal, Zul, Rith
+    </footer>
+</body>
+
+</html>

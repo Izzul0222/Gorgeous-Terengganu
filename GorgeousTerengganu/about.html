@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeous Terengganu - Past Journeys</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Adjust the transparency */
+            z-index: -1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: transform 0.3s, color 0.5s;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: #ffcc00; /* Yellow */
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .place-info {
+            flex: 0 0 48%;
+            margin: 1%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+            background-color: #333;
+        }
+
+        .place-info p {
+            text-align: justify;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .slideshow {
+            flex: 0 0 48%;
+            margin: 1%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logowebsite.png" alt="Your Logo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="about.html">Ganu Story</a>
+        <a href="history.html">Past Journeys</a>
+        <a href="culture.html">Local Traditions</a>
+        <a href="wheretogo.html">Explore Destinations</a>
+        <a href="whattodo.html">Activities Guide</a>
+        <a href="whattoeat.html">Culinary Delights</a>
+        <a href="happenings.html">Events Calendar</a>
+        <!-- Add links to other pages as needed -->
+    </nav>
+
+    <main>
+        <div class="place-info">
+            <h2>About Terengganu</h2>
+            <p>Nestled along the enchanting East Coast region of Peninsular Malaysia, Terengganu is a captivating blend of tradition and modernity. Pronounced [tərəŋɡanu], or affectionately referred to as Tranung in Terengganu Malay, this sultanate and federal state of Malaysia beckons with a rich tapestry of history and culture. Formerly spelled Trengganu or Tringganu, Terengganu embraces its Arabic honorific, Dāru l-Īmān, which translates to the "Abode of Faith." Picture the coastal jewel of Kuala Terengganu, where the Terengganu River gracefully meets the sea – a city that not only serves as the state and royal capital but also stands as the largest in Terengganu. Venture beyond to discover the heartbeat of Terengganu in its vibrant cities and towns, including Jerteh, Kuala Dungun, Chukai, Kuala Berang, Marang, and Permaisuri. Spanning 13,035 square kilometers, Terengganu is the 7th largest state in Malaysia, a vast canvas painted with the diverse hues of its 1.2 million inhabitants. Terengganu, a tapestry woven with the threads of Malay-Muslim heritage, boasts a remarkable homogeneity alongside Kelantan, Perlis, and the Federal Territory of Putrajaya. A staggering 95% of its population proudly carries the torch of ethnic Malay-Muslim identity, a community steeped in a unique language, culture, history, and tradition. Geographically, Terengganu unfolds a captivating story – from the sparsely populated, mountainous inland regions, known as the Terengganu Highlands, crowned by the majestic Mount Lawit at 1,519 meters, to the sprawling coastal plains that cradle the heartbeat of the state. Here, in the rhythm of the waves along the longest coastline in West Malaysia, Terengganu invites you to revel in the pristine beauty that earned it the Malaysian Book of Records for the country's cleanest beach. As the sun-kissed shores embrace the South China Sea to the east, Terengganu's allure extends to its breathtaking islands. Perhentian, Kapas, and Redang Islands beckon with their pristine beauty, while Bidong Island, once a haven for tens of thousands of Vietnamese refugees in the 1970s, adds a poignant chapter to Terengganu's narrative. In Terengganu, every corner whispers tales of resilience, beauty, and a unique identity waiting to be explored.</p>
+        </div>
+
+        <div class="place-info">
+            <h2>General Facts</h2>
+            <p>Population as of 2013 is 1,125,000</p>
+            <p>Capital:Kuala Terengganu</p>
+            <p>Ethnicity:Malay, Chinese, Indians & Others</p>
+            <p>Land Area:13,305 sq. km.</p> 
+            <p>Industries:Oil & Gas, Fisheries, Agriculture, Tourism</p> 
+        </div>
+
+        <div class="place-info">
+            <h2>Exciting Facts</h2>
+            <p>1. Evidence of the coming of Islam was the earliest in the country, which is 700 years ago.</p>
+            <p>2. Malaysia’s longest stretch of beach at 244 kilometres from north to south is in Terengganu.</p>
+            <p>3. Stone Age fossils an evidence of early cave men dwellings have been found in Terengganu that dates backs back between 8,000 to 20,000 years ago.</p>
+            <p>4. Tasik Kenyir is Malaysia’s largest man-made lake. It has a total of 340 islands borne out of hilltops.</p>
+        </div>
+
+        <div class="slideshow">
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="diving.jpg" alt="Diving">
+                </div>
+                <div class="slide">
+                    <img src="setiu.jpg" alt="Setiu Wetlands">
+                </div>
+                <div class="slide">
+                    <img src="saveourturtle.jpg" alt="Turtle Sanctuary">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; All rights reserved. | Gorgeous Terengganu 2024. | Group 6 - Mal, Zul, Rith
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+    </script>
+</body>
+
+</html>

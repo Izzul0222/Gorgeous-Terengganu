@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeous Terengganu - Events Calendar</title>
+    <style>
+        /* Include your existing styles here or link to an external stylesheet */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adjust the transparency (0.5 is 50%) */
+            z-index: -1; /* Place the overlay behind other content */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            background-color: #555;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: transparent;
+            animation: rainbowColorChange 1.5s infinite;
+        }
+
+        @keyframes rainbowColorChange {
+            0% { color: #ff0000; } /* Red */
+            16.666% { color: #ff9900; } /* Orange */
+            33.333% { color: #ffff00; } /* Yellow */
+            50% { color: #33cc33; } /* Green */
+            66.666% { color: #3399ff; } /* Blue */
+            83.333% { color: #9900cc; } /* Purple */
+            100% { color: #ff0000; } /* Back to Red */
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .event-container {
+            flex: 0 0 48%;
+            margin: 1%;
+            text-align: center;
+        }
+
+        .event-image img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .event-image {
+            width: 10cm; /* Set your desired width */
+            height: 8cm; /* Set your desired height */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Apply background color to all table rows */
+        tr {
+            background-color: #f2f2f2; /* Set your desired background color */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logowebsite.png" alt="Your Logo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="about.html">Ganu Story</a>
+        <a href="history.html">Past Journeys</a>
+        <a href="culture.html">Local Traditions</a>
+        <a href="wheretogo.html">Explore Destinations</a>
+        <a href="whattodo.html">Activities Guide</a>
+        <a href="whattoeat.html">Culinary Delights</a>
+        <a href="happenings.html">Events Calendar</a>
+        <!-- Add links to other pages as needed -->
+    </nav>
+
+    <main>
+        <!-- Table for Events -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Countdown</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td id="january-countdown"></td>
+                    <td><img class="event-image" src="pestapermainantradisional.jpg" alt="January Event"></td>
+                </tr>
+
+                <tr>
+                    <td>February</td>
+                    <td id="february-countdown"></td>
+                    <td><img class="event-image" src="konsertcilikgamelan.jpg" alt="February Event"></td>
+                </tr>
+
+                <tr>
+                    <td>March</td>
+                    <td id="march-countdown"></td>
+                    <td><img class="event-image" src="watersportfestival.jpg" alt="March Event"></td>
+                </tr>
+
+                <tr>
+                    <td>April</td>
+                    <td id="april-countdown"></td>
+                    <td><img class="event-image" src="candatsotong.jpg" alt="April Event"></td>
+                </tr>
+
+                <tr>
+                    <td>May</td>
+                    <td id="may-countdown"></td>
+                    <td><img class="event-image" src="festivalwautegak.jpg" alt="May Event"></td>
+                </tr>
+
+                <tr>
+                    <td>June</td>
+                    <td id="june-countdown"></td>
+                    <td><img class="event-image" src="petronasclubprix.jpeg" alt="June Event"></td>
+                </tr>
+
+                <tr>
+                    <td>July</td>
+                    <td id="july-countdown"></td>
+                    <td><img class="event-image" src="saveourturtle.jpg" alt="July Event"></td>
+                </tr>
+
+                <tr>
+                    <td>August</td>
+                    <td id="august-countdown"></td>
+                    <td><img class="event-image" src="kudalasak.jpg" alt="August Event"></td>
+                </tr>
+
+                <tr>
+                    <td>September</td>
+                    <td id="september-countdown"></td>
+                    <td><img class="event-image" src="bukitmaras.jpg" alt="September Event"></td>
+                </tr>
+
+                <tr>
+                    <td>October</td>
+                    <td id="october-countdown"></td>
+                    <td><img class="event-image" src="motocross.webp" alt="October Event"></td>
+                </tr>
+
+                <tr>
+                    <td>November</td>
+                    <td id="november-countdown"></td>
+                    <td><img class="event-image" src="memanah.jpeg" alt="November Event"></td>
+                </tr>
+
+                <tr>
+                    <td>December</td>
+                    <td id="december-countdown"></td>
+                    <td><img class="event-image" src="goldenmonsoon.jpg" alt="December Event"></td>
+                </tr>
+                <!-- Add more rows for other months and events -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        &copy; All rights reserved. | Gorgeous Terengganu 2024. | Group 6 - Mal, Zul, Rith
+    </footer>
+
+    <script>
+        // Replace the event dates with the actual event dates in YYYY/MM/DD format
+        const januaryEventDate = new Date('2024/01/01');
+        const februaryEventDate = new Date('2024/02/01');
+        const marchEventDate = new Date('2024/03/01');
+        const aprilEventDate = new Date('2024/04/01');
+        const mayEventDate = new Date('2024/05/01');
+        const juneEventDate = new Date('2024/06/01');
+        const julyEventDate = new Date('2024/07/01');
+        const augustEventDate = new Date('2024/08/01');
+        const septemberEventDate = new Date('2024/09/01');
+        const octoberEventDate = new Date('2024/10/01');
+        const novemberEventDate = new Date('2024/11/01');
+        const decemberEventDate = new Date('2024/12/01');
+        // Add more event dates as needed
+
+        function updateCountdown(eventDate, countdownId) {
+            const now = new Date();
+            const timeDiff = eventDate - now;
+
+            if (timeDiff > 0) {
+                const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+                document.getElementById(countdownId).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            } else {
+                document.getElementById(countdownId).innerHTML = 'Event has ended';
+            }
+        }
+
+        // Update countdowns
+        setInterval(() => {
+        updateCountdown(januaryEventDate, 'january-countdown');
+        updateCountdown(februaryEventDate, 'february-countdown');
+        updateCountdown(marchEventDate, 'march-countdown');
+        updateCountdown(aprilEventDate, 'april-countdown');
+        updateCountdown(mayEventDate, 'may-countdown');
+        updateCountdown(juneEventDate, 'june-countdown');
+        updateCountdown(julyEventDate, 'july-countdown');
+        updateCountdown(augustEventDate, 'august-countdown');
+        updateCountdown(septemberEventDate, 'september-countdown');
+        updateCountdown(octoberEventDate, 'october-countdown');
+        updateCountdown(novemberEventDate, 'november-countdown');
+        updateCountdown(decemberEventDate, 'december-countdown');
+        // Add more countdowns as needed
+        }, 1000);
+    </script>
+</body>
+
+</html>

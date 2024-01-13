@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeous Terengganu - Explore Destinations</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Adjust the transparency */
+            z-index: -1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: transform 0.3s, color 0.5s;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: #ffcc00; /* Yellow */
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .place-image {
+            flex: 0 0 48%;
+            margin: 1%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+            background-color: #333;
+        }
+
+        .place-image:hover {
+            transform: scale(1.05);
+        }
+
+        .place-image img {
+            width: 100%;
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .place-image p {
+            text-align: justify;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logowebsite.png" alt="Your Logo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="about.html">Ganu Story</a>
+        <a href="history.html">Past Journeys</a>
+        <a href="culture.html">Local Traditions</a>
+        <a href="wheretogo.html">Explore Destinations</a>
+        <a href="whattodo.html">Activities Guide</a>
+        <a href="whattoeat.html">Culinary Delights</a>
+        <a href="happenings.html">Events Calendar</a>
+        <!-- Add links to other pages as needed -->
+    </nav>
+
+    <main>
+        <div class="place-image">
+                <img src="ulek-mayang.jpg" alt="Ulek Mayang">
+            <p>Ulek Mayang</p>
+            <p>Ulek Mayang is a traditional dance and cultural art form originating from the Terengganu state of Malaysia.
+               This enchanting dance is deeply embedded in the rich heritage of the Terengganu Malay community, serving as a captivating expression of their cultural identity.
+               The dance typically features a group of female performers gracefully moving to the rhythm of traditional music. 
+               The dancers, adorned in vibrant and intricately designed costumes, use graceful movements and gestures to tell stories or depict elements of nature and daily life.
+               The dance often involves the use of a "Ulek Mayang," a traditional ceremonial object symbolizing femininity, fertility, and blessings.</p>
+        </div>
+
+        <div class="place-image">
+                <img src="songket" alt="Songket">
+            <p>Songket</p>
+            <p>Songket is a traditional handwoven fabric with intricate patterns and vibrant colors that holds deep cultural significance in various Southeast Asian countries, including Malaysia, Indonesia, and Brunei.
+               This luxurious textile is celebrated for its exquisite craftsmanship, historical relevance, and its role as a symbol of cultural identity.
+               Crafted with meticulous attention to detail, Songket typically features metallic threads, often made of gold or silver, interwoven with silk or cotton.
+               This technique creates elaborate motifs and geometric designs, resulting in a fabric that radiates opulence and sophistication.
+               The intricate patterns are not only aesthetically pleasing but also carry cultural meanings, often inspired by nature, folklore, or religious symbols.</p>
+        </div>
+
+        <div class="place-image">
+            <img src="batik.jpeg" alt="Batik">
+            <p>Batik</p>
+            <p>Batik is a traditional textile art form that has deep cultural roots and is celebrated for its intricate designs, vibrant colors, and historical significance.
+               Originating in Indonesia, Batik has become a distinctive and revered art form in various countries across the world.
+               The process of creating Batik involves applying wax to specific areas of fabric before dyeing it.
+               The wax-resisted areas remain untouched by the dye, creating unique and visually stunning patterns.
+               Artisans use a variety of tools, such as brushes or stamps, to apply the wax, allowing for a wide range of intricate designs and details.</p>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; All rights reserved. | Gorgeous Terengganu 2024. | Group 6 - Mal, Zul, Rith
+    </footer>
+</body>
+
+</html>

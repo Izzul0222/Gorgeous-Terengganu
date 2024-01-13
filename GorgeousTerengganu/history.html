@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeous Terengganu - Past Journeys</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Adjust the transparency */
+            z-index: -1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: transform 0.3s, color 0.5s;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: #ffcc00; /* Yellow */
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .place-info {
+            flex: 0 0 48%;
+            margin: 1%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+            background-color: #333;
+        }
+
+        .place-info p {
+            text-align: justify;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .slideshow {
+            flex: 0 0 48%;
+            margin: 1%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logowebsite.png" alt="Your Logo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="about.html">Ganu Story</a>
+        <a href="history.html">Past Journeys</a>
+        <a href="culture.html">Local Traditions</a>
+        <a href="wheretogo.html">Explore Destinations</a>
+        <a href="whattodo.html">Activities Guide</a>
+        <a href="whattoeat.html">Culinary Delights</a>
+        <a href="happenings.html">Events Calendar</a>
+        <!-- Add links to other pages as needed -->
+    </nav>
+
+    <main>
+        <div class="place-info">
+            <h2>Kuala Terengganu</h2>
+            <p>Terengganu, a treasure trove of enchantment, stands apart with its unique allure amidst the dynamic landscape of Malaysian states.
+                While modernization races forward, Terengganu has masterfully preserved the essence of time, offering a rare blend of rustic charm and idyllic beauty that sets it apart from typical tourist destinations.
+                Within the heart of Terengganu beats the pulse of a diverse and closely-knit society, where warmth and grace radiate through friendly smiles and shared values. 
+                Here, different races unite in the spirit of community, bound by a love for local flavors and a shared dialect that echoes unity.
+                Nature has bestowed Terengganu with unparalleled beauty—a 244km stretch of pristine coastline, tropical rainforests that whisper tales of a bygone era, and islands with emerald waters that transform into a golden symphony under the sun's embrace.
+                Amidst this natural splendor, Terengganu proudly embraces its rich customs and traditions, woven through the fabric of daily life, arts, handicrafts, and culinary delights.
+                It stands as a vibrant testament to its heritage, making Terengganu an unrivaled destination for intrepid travelers.
+                Today, Terengganu seamlessly blends the old with the new against the backdrop of traditional poise and beauty.
+                The state is a melting pot where progressive change harmoniously coexists with timeless values cherished by generations.
+                Step into Terengganu, a tropical haven where nature intertwines with heritage to invigorate your senses.
+                Explore the splendors of nature, the tapestry of traditions, and the allure of heritage—it's an experience that transcends ordinary travel.
+                Terengganu, truly a destination like no other.
+                Welcome to a realm where every moment is an invitation to discover the extraordinary.</p>
+        </div>
+
+        <div class="slideshow">
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="kualaterengganu.jpg" alt="Kuala Terengganu 1">
+                </div>
+                <div class="slide">
+                    <img src="nature.jpg" alt="Kuala Terengganu 2">
+                </div>
+                <div class="slide">
+                    <img src="konsertcilikgamelan.jpg" alt="Kuala Terengganu 3">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; All rights reserved. | Gorgeous Terengganu 2024. | Group 6 - Mal, Zul, Rith
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+    </script>
+</body>
+
+</html>

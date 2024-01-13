@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorgeous Terengganu - Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            color: white;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            background-color: #555;
+            padding: 10px;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: transparent;
+            animation: rainbowColorChange 1.5s infinite;
+        }
+
+        @keyframes rainbowColorChange {
+            0% { color: #ff0000; }
+            16.666% { color: #ff9900; }
+            33.333% { color: #ffff00; }
+            50% { color: #33cc33; }
+            66.666% { color: #3399ff; }
+            83.333% { color: #9900cc; }
+            100% { color: #ff0000; }
+        }
+
+        main {
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logowebsite.png" alt="Your Logo">
+        </a>
+    </header>
+
+    <nav>
+        <a href="about.html">Ganu Story</a>
+        <a href="history.html">Past Journeys</a>
+        <a href="culture.html">Local Traditions</a>
+        <a href="wheretogo.html">Explore Destinations</a>
+        <a href="whattodo.html">Activities Guide</a>
+        <a href="whattoeat.html">Culinary Delights</a>
+        <a href="happenings.html">Events Calendar</a>
+    </nav>
+
+    <main>
+        <h1>Gorgeous Terengganu Chronicles</h1>
+        <p>Discover the enchanting beauty of Terengganu, where the rich tapestry of tradition, culture, and natural wonders come together to create a truly breathtaking experience. Nestled on the east coast of Malaysia, Terengganu is a hidden gem that beckons you to explore its pristine beaches, vibrant markets, and centuries-old heritage.
+            At Gorgeous Terengganu, we aim to be your ultimate guide to this captivating region, offering insights into its diverse landscapes, captivating history, and the warm hospitality of its people. Whether you're a seasoned traveler or a first-time visitor, our website is designed to be your go-to resource for everything Terengganu.
+            Immerse yourself in the vivid hues of local festivals, savor the flavors of traditional cuisine, and embark on virtual journeys through our curated articles and stunning visuals. From the iconic Crystal Mosque to the serene islands dotting the coastline, we invite you to explore the wonders that make Terengganu truly gorgeous.
+            Join us on this virtual odyssey as we showcase the allure of Terengganu, where every corner is a testament to the region's natural splendor and cultural richness. Let Gorgeous Terengganu be your gateway to a world of beauty, history, and adventure.
+            Come, wander with us through the landscapes of Gorgeous Terengganu, and let the magic of this place leave an indelible mark on your heart.</p>
+    </main>
+
+    <footer>
+        &copy; All rights reserved. | Gorgeous Terengganu 2024. | Group 6 - Mal, Zul, Rith
+    </footer>
+</body>
+
+</html>
